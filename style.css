@@ -1,3 +1,160 @@
-h1 {
-    color: red;
+body {
+    --dark-gray: #505050;
+    --light-grey: #777777;
+    --light-blue: #b4d5e9;
+    --bold: 600;
+    --font-average: 1rem;
+    --line-height-medium: 2rem;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+    font-family: "Cabin", sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid var(--light-blue) 10px;
+    border-radius: 50%;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: var(--dark-gray);
+}
+
+header h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+aside h2:first-child {
+    position: relative;
+    top: -20px;
+}
+
+aside {
+    background-color: var(--light-blue);
+    padding: 0 30px;
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+aside a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+}
+
+aside ul li {
+    padding: 5px 0;
+}
+
+.link-icon {
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    filter: invert(29%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(99%) contrast(87%);
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: var(--dark-gray);
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 0 auto;
+
+    color: #ffffff;
+
+}
+
+aside h2:not(:first-of-type) {
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.marker {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.link-github img {
+    height: 30px;
+
+}
+
+.left {
+    width: 40%;
+}
+
+.font-average {
+    font-size: var(--font-average);
+}
+
+/*.marker li:before {*/
+/*    content: "";*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    border-radius: 50%;*/
+/*    background-color: var(--dark-gray);*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    margin-right: 16px;*/
+
+/*}*/
+
+/*.marker li:before {*/
+/*    content: "";*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    border-radius: 50%;*/
+/*    background-color: var(--dark-gray);*/
+/*    vertical-align: middle;*/
+/*    display: inline-block;*/
+/*    margin-right: 16px;*/
+
+/*}*/
+
+.font-bold {
+    font-weight: var(--bold);
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.line-height-medium {
+    line-height: var(--line-height-medium);
 }
