@@ -48,7 +48,7 @@ aside h2:first-child {
 
 aside {
     background-color: var(--light-blue);
-    padding: 0 30px;
+    padding: 0 30px 20px 30px;
     color: var(--dark-gray);
     font-size: 1.2rem;
 
@@ -123,30 +123,6 @@ ul {
     font-size: var(--font-average);
 }
 
-/*.marker li:before {*/
-/*    content: "";*/
-/*    width: 5px;*/
-/*    height: 5px;*/
-/*    border-radius: 50%;*/
-/*    background-color: var(--dark-gray);*/
-/*    vertical-align: middle;*/
-/*    display: inline-block;*/
-/*    margin-right: 16px;*/
-
-/*}*/
-
-/*.marker li:before {*/
-/*    content: "";*/
-/*    width: 5px;*/
-/*    height: 5px;*/
-/*    border-radius: 50%;*/
-/*    background-color: var(--dark-gray);*/
-/*    vertical-align: middle;*/
-/*    display: inline-block;*/
-/*    margin-right: 16px;*/
-
-/*}*/
-
 .font-bold {
     font-weight: var(--bold);
 }
@@ -157,4 +133,33 @@ ul {
 
 .line-height-medium {
     line-height: var(--line-height-medium);
+}
+
+footer ul {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--dark-gray);
+    color: white;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.rs-logo {
+    height: 35px;
+    filter: invert(100%) sepia(96%) saturate(20%) hue-rotate(213deg) brightness(105%) contrast(100%);
+}
+
+.github-logo {
+    height: 32px;
+    margin-right: 10px;
+    filter: invert(100%) sepia(96%) saturate(20%) hue-rotate(213deg) brightness(105%) contrast(100%);
+}
+
+.link-github {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: white;
+
 }
