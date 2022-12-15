@@ -5,7 +5,8 @@ body {
     --bold: 600;
     --font-average: 1rem;
     --line-height-medium: 2rem;
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 380px;
     margin: 30px auto;
     font-family: "Cabin", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
@@ -216,7 +217,8 @@ main ul {
     list-style: disc;
     padding-left: 20px;
 }
-.projects-image{
+
+.projects-image {
     width: 100%;
     /*box-sizing: border-box;*/
     /*border: 5px solid var(--light-blue);*/
@@ -224,19 +226,23 @@ main ul {
     transition: transform .5s;
     margin-bottom: 30px;
 }
-.projects-image:hover{
+
+.projects-image:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform .5s;
 }
-main h3{
+
+main h3 {
     margin-top: 0;
     font-size: 1.1rem;
 }
-.contact-link{
+
+.contact-link {
     position: relative;
 }
-.contact-link:after{
+
+.contact-link:after {
     content: "";
     background-color: black;
     position: absolute;
@@ -248,8 +254,66 @@ main h3{
     transition: transform .5s;
     transform-origin: left;
 }
-.contact-link:hover:after{
+
+.contact-link:hover:after {
     transform: scaleX(1);
     transition: transform .5s;
     transform-origin: left;
+}
+
+.epam-cert {
+    width: 70%;
+}
+
+.a1qa-cert {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+
+    body {
+        margin: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .github-text {
+        display: none;
+    }
+
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.text-indent {
+    text-indent: 2ch;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .main-text {
+        grid-column: span 2;
+    }
+
+    .empty {
+        display: none;
+    }
 }
