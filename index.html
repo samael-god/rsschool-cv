@@ -9,38 +9,41 @@
 <body>
 
 <div class="cv-wrapper flex">
-    <div class="left-container">
+    <div class="left-container flex">
         <header>
-            <img alt="Photo" src="assets/photo.jpg">
+            <img class="cv-photo" alt="Photo" src="assets/photo.jpg">
             <h1>Nikita<br>Lushpa</h1>
             <h3>Frontend Developer<br>Trainee</h3>
         </header>
         <aside>
-            <h2>CONTACTS</h2>
+            <h2 class="heading-relative aside__heading">CONTACTS</h2>
             <nav>
                 <ul>
-                    <li class="contact-link"><a class="link-phone" href="tel:+375293490700"><img alt=""
-                                                                                                 class="link-icon"
-                                                                                                 src="assets/phone.svg">+375
+                    <li class="aside__contact-link"><a href="tel:+375293490700"><img alt="phone icon"
+                                                                                     class="aside__link-icon"
+                                                                                     src="assets/phone.svg">+375
                         (29)
                         349-07-00</a></li>
-                    <li class="contact-link"><a class="link-email" href="mailto:nikita.95_@mail.ru"><img alt=""
-                                                                                                         class="link-icon"
-                                                                                                         src="assets/mail.svg">nikita.95_@mail.ru</a>
+                    <li class="aside__contact-link"><a href="mailto:nikita.95_@mail.ru"><img
+                            alt="email icon"
+                            class="aside__link-icon"
+                            src="assets/mail.svg">nikita.95_@mail.ru</a>
                     </li>
-                    <li class="contact-link"><a class="link-telegram" href="https://t.me/samaelgod"><img alt=""
-                                                                                                         class="link-icon"
-                                                                                                         src="assets/telegram.svg">@samaelgod</a>
+                    <li class="aside__contact-link"><a href="https://t.me/samaelgod"><img
+                            alt="telegram icon"
+                            class="aside__link-icon"
+                            src="assets/telegram.svg">@samaelgod</a>
                     </li>
-                    <li class="contact-link"><a class="link-map" href="https://yandex.by/maps/-/CCUZyLT3OD"><img alt=""
-                                                                                                                 class="link-icon"
-                                                                                                                 src="assets/map.svg">Minsk,
+                    <li class="aside__contact-link"><a href="https://yandex.by/maps/-/CCUZyLT3OD"><img
+                            alt="map icon"
+                            class="aside__link-icon"
+                            src="assets/map.svg">Minsk,
                         Belarus</a></li>
                 </ul>
 
             </nav>
-            <h2>SKILLS</h2>
-            <ul class="marker">
+            <h2 class="aside__heading">SKILLS</h2>
+            <ul class="list-marker">
                 <li>HTML, CSS</li>
                 <li>Vanila JS (Basic)</li>
                 <li>Git, Github</li>
@@ -48,20 +51,23 @@
                 <li>Adobe Photoshop/Illustrator</li>
                 <li>Figma</li>
             </ul>
-            <h2>LANGUAGES</h2>
-            <ul class="marker">
+            <h2 class="aside__heading">LANGUAGES</h2>
+            <ul class="list-marker">
                 <li><span
-                        class="font-bold line-height-medium">ENGLISH</span><br>Intermediate (B1)
+                        class="font-bold line-height-big">ENGLISH</span><br>Intermediate (B1)
                 </li>
-                <li><span class="font-bold line-height-medium">Russian</span><br>Native</li>
+                <li><span class="font-bold line-height-big">Russian</span><br>Native</li>
             </ul>
         </aside>
     </div>
     <main>
-        <div class="flex main__icon-background overflow"><img alt="" class="main-icon" src="assets/user.png"></div>
-        <h2>About me</h2>
+        <div class="flex main__icon-background overflow"><img alt="user icon" class="main__icon" src="assets/user.png">
+        </div>
+        <h2 class="main__heading margin-0">About me</h2>
         <div class="empty"></div>
-        <div class="main-text text-indent text-justify"><p class="margin-0">I started my working path as a researcher in
+        <div class="line-height-average text-indent text-justify grid-mobile"><p class="margin-0">I started my working
+            path as a
+            researcher in
             the
             scientific laboratory.
             The specifics
@@ -80,54 +86,58 @@
                 path of becoming a
                 proficient Frontend Developer.</p>
         </div>
-        <div class="flex main__icon-background"><img alt="main-icon" class="main-icon" src="assets/cap.png"></div>
-        <h2>Education</h2>
+        <div class="flex main__icon-background"><img alt="cap icon" class="main__icon" src="assets/cap.png"></div>
+        <h2 class="main__heading margin-0">Education</h2>
         <div class="empty"></div>
-        <div class="main-text"><h3>Belarusian State University of Informatics and Radioelectronics</h3>
-            <ul>
+        <div class="line-height-average grid-mobile"><p class="main__subheading">Belarusian State University of
+            Informatics and
+            Radioelectronics</p>
+            <ul class="list-marker">
                 <li>Electronics Engineer <br>2013 - 2017</li>
                 <li>Master of Engineering <br>2017 - 2019</li>
                 <li>Researcher <br>2019 - 2022</li>
             </ul>
-            <h3 class="margin-bottom-0">Currently i am working as a scientist in the same university!</h3>
+            <p class="margin-bottom-0">Currently i am working as a scientist in the same university!</p>
         </div>
-        <div class="flex main__icon-background overflow"><img alt="main-icon" class="main-icon"
+        <div class="flex main__icon-background overflow"><img alt="courses icon" class="main__icon"
                                                               src="assets/certificate-2.png">
         </div>
-        <h2>Courses</h2>
+        <h2 class="main__heading margin-0">Courses</h2>
         <div class="empty"></div>
-        <div class="main-text">
-            <ul>
-                <li>A1qa software testing courses</li>
+        <div class="line-height-average grid-mobile">
+            <ul class="list-marker">
+                <li>A1qa software testing course</li>
                 <li>EPAM Software Testing Introduction (STI&nbsp;37)</li>
             </ul>
             <div class="text-center">
-                <img class="a1qa-cert margin-bottom-5" alt="" src="assets/cert1.webp">
-                <img class="epam-cert" alt="" src="assets/cert-2.jpg">
+                <img class="a1qa-certificate margin-bottom-5" alt="a1qa certificate" src="assets/cert1.webp">
+                <img class="epam-certificate" alt="EPAM certificate" src="assets/cert-2.jpg">
             </div>
         </div>
-        <div class="flex main__icon-background"><img alt="main-icon" class="main-icon" src="assets/cap.png"></div>
-        <h2>Projects</h2>
+        <div class="flex main__icon-background"><img alt="projects icon" class="main__icon" src="assets/project.png">
+        </div>
+        <h2 class="main__heading margin-0">Projects</h2>
         <div class="empty"></div>
-        <div class="main-text">
-            <h3>Simple responsive landing page</h3>
-            <a href="https://samael-god.github.io/landing/"><img class="projects-image" src="assets/landing.png"
+        <div class="line-height-average grid-mobile">
+            <p class="main__subheading">Simple responsive landing page</p>
+            <a href="https://samael-god.github.io/landing/"><img class="main__projects-image" src="assets/landing.png"
                                                                  alt="project 'landing' image"></a>
-            <h3>Gift application (no js)</h3>
-            <a href="https://samael-god.github.io/gift.html"><img class="projects-image" src="assets/gift-app.png"
-                                                                  alt="project 'landing' image"></a>
+            <p class="main__subheading">Gift application (no js)</p>
+            <a href="https://samael-god.github.io/gift.html"><img class="main__projects-image" src="assets/gift-app.png"
+                                                                  alt="project 'gift' image"></a>
         </div>
 
     </main>
 </div>
 <footer>
-    <ul class="flex">
-        <li><a class="link-github" href="https://github.com/samael-god"><img alt="github logo" class="github-logo"
-                                                                             src="assets/github.svg"><span
+    <ul class="flex margin-0 footer-list">
+        <li><a class="link-github flex" href="https://github.com/samael-god"><img alt="github logo" class="github-logo"
+                                                                                  src="assets/github.svg"><span
                 class="github-text">Visit my Github</span></a>
         </li>
         <li>©2021</li>
-        <li><a href="https://rs.school/js/"><img alt="rs school logo" class="rs-logo" src="assets/rs_school_js.svg"></a>
+        <li><a href="https://rs.school/js/"><img alt="rs school logo" class="rs-logo"
+                                                 src="assets/rs_school_js.svg"></a>
         </li>
     </ul>
 </footer>
