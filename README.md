@@ -1,1 +1,1 @@
-# rsschool-cv
+https://samael-god.github.io/rsschool-cv/
