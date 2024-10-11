@@ -297,6 +297,14 @@ a {
 .overflow {
     overflow: hidden;
 }
+.certificate {
+    font-style: italic;
+    transition: .2s;
+}
+.certificate:hover {
+    color: lightcoral;
+    transition: .2s;
+}
 /*------------------------------------------Common styles END--------------------------------------------*/
 
 
